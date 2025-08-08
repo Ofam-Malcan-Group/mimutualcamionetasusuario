@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_message">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnCloseMessage"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/img_message_important" />
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/margin_28"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_28"
+        android:fontFamily="@font/avenir_next"
+        android:maxLines="10"
+        android:textAlignment="center"
+        android:textSize="@dimen/txt_14" />
+
+    <ImageButton
+        android:id="@+id/btnCloseMessage"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/margin_8"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/btn_close" />
+
+    <Button
+        android:id="@+id/btnOkMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMessage"
+        android:layout_margin="@dimen/margin_28"
+        android:background="@drawable/bg_button_blue"
+        android:fontFamily="@font/giveahoot"
+        android:text="@string/btn_ok"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

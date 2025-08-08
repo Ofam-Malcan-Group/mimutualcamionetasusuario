@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".RegisterActivity"
+    tools:ignore="Overdraw">
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/margin_24"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_back" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_16"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/img_logo_blue" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bannerBottom"
+        android:layout_below="@+id/banner">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_28"
+            android:layout_marginEnd="@dimen/margin_28"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:fontFamily="@font/giveahoot"
+                android:text="@string/txt_complete_info"
+                android:textColor="@color/primary_text"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/ibCameraScanner"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:background="@drawable/btn_scan_id"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tvImageScanner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/giveahoot"
+                android:gravity="center"
+                android:text="@string/txt_info_id"
+                android:textColor="@color/primary_text"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/selector_edit_text"
+                android:fontFamily="@font/avenir_next"
+                android:hint="@string/hint_name"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:maxLength="70"
+                android:paddingStart="@dimen/margin_12"
+                android:paddingEnd="@dimen/margin_12"
+                android:textSize="@dimen/txt_13" />
+
+            <EditText
+                android:id="@+id/edLastName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/selector_edit_text"
+                android:fontFamily="@font/avenir_next"
+                android:hint="@string/hint_last_name"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:maxLength="70"
+                android:paddingStart="@dimen/margin_12"
+                android:paddingEnd="@dimen/margin_12"
+                android:textSize="@dimen/txt_13" />
+
+            <EditText
+                android:id="@+id/edTypeDocument"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/selector_edit_text"
+                android:drawableEnd="@drawable/img_next"
+                android:focusable="false"
+                android:fontFamily="@font/avenir_next"
+                android:hint="@string/hint_type_doc"
+                android:importantForAutofill="no"
+                android:inputType="none|textNoSuggestions"
+                android:paddingStart="@dimen/margin_12"
+                android:paddingEnd="@dimen/margin_12"
+                android:textSize="@dimen/txt_14" />
+
+            <EditText
+                android:id="@+id/edId"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/selector_edit_text"
+                android:fontFamily="@font/avenir_next"
+                android:hint="@string/hint_id_number"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingStart="@dimen/margin_12"
+                android:paddingEnd="@dimen/margin_12"
+                android:textSize="@dimen/txt_13" />
+
+            <EditText
+                android:id="@+id/edDateExp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/selector_edit_text"
+                android:clickable="true"
+                android:focusable="false"
+                android:fontFamily="@font/avenir_next"
+                android:hint="@string/txt_date_document"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:maxLines="1"
+                android:paddingStart="@dimen/margin_12"
+                android:paddingEnd="@dimen/margin_12"
+                android:textSize="@dimen/txt_13"
+                tools:ignore="KeyboardInaccessibleWidget" />
+
+            <EditText
+                android:id="@+id/edNumberPhone"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/selector_edit_text"
+                android:fontFamily="@font/avenir_next"
+                android:hint="@string/hint_number_phone"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingStart="@dimen/margin_12"
+                android:paddingEnd="@dimen/margin_12"
+                android:textSize="@dimen/txt_13" />
+
+<!--            <EditText-->
+<!--                android:id="@+id/edDepartment"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/dimen_45"-->
+<!--                android:layout_marginTop="@dimen/margin_16"-->
+<!--                android:background="@drawable/selector_edit_text"-->
+<!--                android:drawableEnd="@drawable/img_next"-->
+<!--                android:focusable="false"-->
+<!--                android:fontFamily="@font/avenir_next"-->
+<!--                android:hint="@string/hint_department"-->
+<!--                android:importantForAutofill="no"-->
+<!--                android:inputType="none|textNoSuggestions"-->
+<!--                android:paddingStart="@dimen/margin_12"-->
+<!--                android:paddingEnd="@dimen/margin_12"-->
+<!--                android:textSize="@dimen/txt_14" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/edCity"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/dimen_45"-->
+<!--                android:layout_marginTop="@dimen/margin_16"-->
+<!--                android:background="@drawable/selector_edit_text"-->
+<!--                android:drawableEnd="@drawable/img_next"-->
+<!--                android:focusable="false"-->
+<!--                android:fontFamily="@font/avenir_next"-->
+<!--                android:hint="@string/hint_city"-->
+<!--                android:importantForAutofill="no"-->
+<!--                android:inputType="none|textNoSuggestions"-->
+<!--                android:paddingStart="@dimen/margin_12"-->
+<!--                android:paddingEnd="@dimen/margin_12"-->
+<!--                android:textSize="@dimen/txt_14" />-->
+
+            <EditText
+                android:id="@+id/edAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/selector_edit_text"
+                android:fontFamily="@font/avenir_next"
+                android:hint="@string/txt_address"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLength="150"
+                android:paddingStart="@dimen/margin_12"
+                android:paddingEnd="@dimen/margin_12"
+                android:textSize="@dimen/txt_13" />
+
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/selector_edit_text"
+                android:fontFamily="@font/avenir_next"
+                android:hint="@string/hint_account_email"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:paddingStart="@dimen/margin_12"
+                android:paddingEnd="@dimen/margin_12"
+                android:textSize="@dimen/txt_13" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/colorPrimary"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_edit_text"
+                    android:fontFamily="@font/avenir_next"
+                    android:hint="@string/hint_pass"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:maxLength="30"
+                    android:paddingStart="@dimen/margin_12"
+                    android:paddingEnd="@dimen/margin_12"
+                    android:textSize="@dimen/txt_13" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@android:color/transparent"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/colorPrimary"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edPassword2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_edit_text"
+                    android:fontFamily="@font/avenir_next"
+                    android:hint="@string/hint_confirm_pass"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:maxLength="30"
+                    android:paddingStart="@dimen/margin_12"
+                    android:paddingEnd="@dimen/margin_12"
+                    android:textSize="@dimen/txt_13" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_12"
+                android:fontFamily="@font/giveahoot"
+                android:text="@string/txt_photo_perfil"
+                android:textColor="@color/primary_text"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/ivPhotoProfile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_150"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/llPhotoProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_28"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_28"
+                android:background="@drawable/bg_border_camera"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:fontFamily="@font/giveahoot"
+                    android:text="@string/txt_camera_item3"
+                    android:textAlignment="center"
+                    android:textColor="@color/primary_text"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginBottom="@dimen/margin_12"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:id="@+id/ivTakePhotoProfile"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/btn_camera" />
+
+                    <ImageView
+                        android:id="@+id/ivFindPhotoProfile"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/btn_add_photo" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginBottom="@dimen/margin_16"
+                    android:fontFamily="@font/giveahoot"
+                    android:text="@string/txt_camera_item2"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_12"
+                android:fontFamily="@font/giveahoot"
+                android:text="@string/txt_document_id"
+                android:textColor="@color/primary_text"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/ivPhotoDocument"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_150"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/llPhotoDocument"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_28"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_28"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:background="@drawable/bg_border_camera"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:fontFamily="@font/giveahoot"
+                    android:text="@string/txt_camera_item1"
+                    android:textAlignment="center"
+                    android:textColor="@color/primary_text"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginBottom="@dimen/margin_12"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:id="@+id/ivTakePhotoDocument"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/btn_camera" />
+
+                    <ImageView
+                        android:id="@+id/ivFindPhotoDocument"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        app:srcCompat="@drawable/btn_add_photo" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginBottom="@dimen/margin_16"
+                    android:fontFamily="@font/giveahoot"
+                    android:text="@string/txt_camera_item4"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_12"
+                android:fontFamily="@font/giveahoot"
+                android:text="@string/txt_info_additional"
+                android:textColor="@color/primary_text"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edNomContact"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/selector_edit_text"
+                android:fontFamily="@font/avenir_next"
+                android:hint="@string/hint_name_contact"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLength="150"
+                android:paddingStart="@dimen/margin_12"
+                android:paddingEnd="@dimen/margin_12"
+                android:textSize="@dimen/txt_13" />
+
+            <EditText
+                android:id="@+id/edNumberPhoneContact"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/selector_edit_text"
+                android:fontFamily="@font/avenir_next"
+                android:hint="@string/hint_number_phone_contact"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingStart="@dimen/margin_12"
+                android:paddingEnd="@dimen/margin_12"
+                android:textSize="@dimen/txt_13" />
+
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginStart="@dimen/dimen_40"
+                android:layout_marginTop="@dimen/txt_16"
+                android:layout_marginEnd="@dimen/dimen_40"
+                android:layout_marginBottom="@dimen/margin_40"
+                android:background="@drawable/bg_button_clear"
+                android:fontFamily="@font/giveahoot"
+                android:text="@string/btn_account_register"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/bannerBottom"
+        layout="@layout/banner_powered_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_8" />
+
+</RelativeLayout>

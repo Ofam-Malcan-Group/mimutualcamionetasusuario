@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@drawable/bg_base_finding" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_12"
+        android:fontFamily="@font/avenir_next"
+        android:gravity="center"
+        android:text="@string/txt_finding_drivers"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCancelMessage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_28"
+        android:background="@drawable/bg_button_blue"
+        android:elevation="5dp"
+        android:fontFamily="@font/giveahoot"
+        android:paddingStart="@dimen/margin_32"
+        android:paddingEnd="@dimen/margin_32"
+        android:text="@string/btn_cancel"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

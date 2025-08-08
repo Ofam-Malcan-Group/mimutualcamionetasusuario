@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">MiMutual Camionetas Usuario</string>
+
+    <string name="app_folder" translatable="false">MiMutual</string>
+    <string name="app_folder_log" translatable="false">LOG</string>
+    <!-- Servers -->
+    <string name="app_server" translatable="false">@string/app_server_prod</string>
+    <string name="app_server_EN" translatable="false">@string/app_server_prod_EN</string>
+    <string name="app_server_des" translatable="false">http://192.168.1.23/wScorePub/Wcf/srvMiMutual.svc</string>
+    <string name="app_server_des_EN" translatable="false">http://192.168.1.23/wScorePub/Wcf/srvMiMutualEN.svc</string>
+    <string name="app_server_prod" translatable="false">https://score.ofam.com.co/wScorePub/Wcf/srvMiMutual.svc</string>
+    <string name="app_server_prod_EN" translatable="false">https://score.ofam.com.co/wScorePub/Wcf/srvMiMutualEN.svc</string>
+    <string name="app_server_pru" translatable="false">http://pruebas.ofamscore.com/wscorepub/wcf/srvmimutual.svc</string>
+    <string name="app_server_pru_EN" translatable="false">http://pruebas.ofamscore.com/wscorepub/wcf/srvmimutualEN.svc</string>
+
+    <string name="btn_account_register">Registrarme</string>
+    <string name="btn_add_car">Agregar Carro</string>
+    <string name="btn_become_a_driver">Convertirme en conductor</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="btn_cancel_service">Cancelar Servicio</string>
+    <string name="btn_change_route">Cambiar Ruta</string>
+    <string name="btn_close_session">Cerrar Sesión</string>
+    <string name="btn_collect_user">Iniciar Servicio</string>
+    <string name="btn_continue">Continuar</string>
+    <string name="btn_do_not_take">No tomar</string>
+    <string name="btn_efectivo">Efectivo</string>
+    <string name="btn_enter">Ingresar</string>
+    <string name="btn_forgot_password">Olvidé mi contraseña</string>
+    <string name="btn_leave_user">Terminar Servicio</string>
+    <string name="btn_mis_carros">Mis carros</string>
+    <string name="btn_notify_service">En puerta</string>
+    <string name="btn_ok">Aceptar</string>
+    <string name="btn_ready">Listo</string>
+    <string name="btn_register">Regístrate</string>
+    <string name="btn_request_service">Solicitar Servicio</string>
+    <string name="btn_take">Tomar</string>
+    <string name="btn_tuquery" translatable="false">TUQUERY</string>
+
+    <string name="channel_mm" translatable="false">canal_mm</string>
+    <string name="channel_tracking_mm" translatable="false">tracking_mm</string>
+
+    <string name="concat_barrio">Barrio: %s</string>
+    <string name="concat_car">Carro: %s</string>
+    <string name="concat_collect">Recoger: %s</string>
+    <string name="concat_error" translatable="false">%s (%s)</string>
+    <string name="concat_leave_in">Dejar en: %s</string>
+    <string name="concat_user">Usuario: %s</string>
+
+    <string name="ex_reg_name" translatable="false">^[(A-Za-zÁÉÍÓÚñáéíóúÑ )]+$</string>
+    <string name="ex_reg_pass" translatable="false"><![CDATA[^(?=.*[A-Z])(?=.*\\d)(?=.*[@$\"!¡%*#?¿&/.()=,\\-_;:+<>])[A-Za-z\\d@$\"!¡%*#?¿&/.()=,\\-_;:+<>]+$]]></string>
+    <string name="ex_reg_tel" translatable="false" tools:ignore="TypographyDashes">(300|301|302|303|304|305|310|311|312|313|314|315|316|317|318|319|320|321|322|323|350|351)([0-9]){7}</string>
+
+    <string name="extra_dirDes_notification" translatable="false">dirDes</string>
+    <string name="extra_dirOri_notification" translatable="false">dirOri</string>
+    <string name="extra_message_notification" translatable="false">message</string>
+    <string name="extra_service" translatable="false">service</string>
+    <string name="extra_service_id" translatable="false">idService</string>
+    <string name="extra_type_notification" translatable="false">typeNotification</string>
+    <string name="extra_user_mi_mutual" translatable="false">userMiMutual</string>
+
+    <string name="facebook_app_id" translatable="false">2113090879073317</string>
+    <string name="facebook_client_token" translatable="false">236afd543c98a5f5c3dafce2ce1a4e0c</string>
+
+    <string name="format_concat" translatable="false">%s %s</string>
+
+    <string name="hint_account_email">Correo electrónico</string>
+    <string name="hint_address_collect">Dirección recogida…</string>
+    <string name="hint_address_destiny">Dirección destino…</string>
+    <string name="hint_brand">Marca</string>
+    <string name="hint_chasis">Chasis</string>
+    <string name="hint_city">Seleccione ciudad</string>
+    <string name="hint_confirm_pass">Confirmar contraseña</string>
+    <string name="hint_department">Seleccione departamento</string>
+    <string name="hint_id_number">Número documento de identidad</string>
+    <string name="hint_last_name">Apellidos</string>
+    <string name="hint_model">Modelo</string>
+    <string name="hint_name">Nombres</string>
+    <string name="hint_name_contact">Nombre contacto emergencia</string>
+    <string name="hint_neighbourhood">Barrio recogida</string>
+    <string name="hint_number_motor">Número Motor</string>
+    <string name="hint_number_phone">Número celular con WhatsApp</string>
+    <string name="hint_number_phone_contact">Número contacto emergencia</string>
+    <string name="hint_pass">Contraseña</string>
+    <string name="hint_plate">Placa</string>
+    <string name="hint_tarjeta_operation">Tarjeta Operación</string>
+    <string name="hint_type_doc">Seleccione tipo de documento</string>
+    <string name="hint_year">Año</string>
+
+    <string name="intent_Data_Camera" table="false" translatable="false">data</string>
+
+    <string name="menu_item_historical_driver">Servicios prestados</string>
+    <string name="menu_item_historical_user">Historial de viajes</string>
+    <string name="menu_item_profile">Mi Perfil</string>
+    <string name="menu_item_request_service">Solicitar servicio de taxi</string>
+
+    <string name="msg_driver_active">Estas activo en el sistema como conductor y no puedes solicitar servicios, si deseas solicitar un servicio debes desactivar el modo conductor.</string>
+    <string name="msg_end_service">El servicio finalizo correctamente con un valor de </string>
+    <string name="msg_error_cities">No hay ciudades configuradas para este departamento.</string>
+    <string name="msg_error_ciudades">No hay ciudades configuradas para este departamento.</string>
+    <string name="msg_error_close_service">Error al finalizar el servicio</string>
+    <string name="msg_error_create_log" translatable="false">Error Creando log</string>
+    <string name="msg_error_data_doc">Error extrayendo info inténtalo nuevamente.</string>
+    <string name="msg_error_departments">No hay departamentos configurados.</string>
+    <string name="msg_error_en_service">El servicio finalizo con éxito el valor a pagar del usuario es </string>
+    <string name="msg_error_gps">Este dispositivo no tiene servicio de GPS.</string>
+    <string name="msg_error_invalid_address">La dirección debe tener mínimo 10 caracteres.</string>
+    <string name="msg_error_invalid_chasis">El número del chasis debe tener mínimo 4 dígitos.</string>
+    <string name="msg_error_invalid_date">Fecha invalida.</string>
+    <string name="msg_error_invalid_email">No es un email válido.</string>
+    <string name="msg_error_invalid_last_name">El apellido no es válido.</string>
+    <string name="msg_error_invalid_mark">La marca debe tener mínimo 3 dígitos.</string>
+    <string name="msg_error_invalid_model">El modelo debe tener mínimo 4 dígitos.</string>
+    <string name="msg_error_invalid_motor">El número del motor debe tener 4 dígitos.</string>
+    <string name="msg_error_invalid_name">El nombre no es válido.</string>
+    <string name="msg_error_invalid_number_id">El número de cedula debe tener mínimo 6 dígitos.</string>
+    <string name="msg_error_invalid_number_phone">El número de celular no es válido.</string>
+    <string name="msg_error_invalid_number_plate">El número de placa debe tener mínimo 6 dígitos.</string>
+    <string name="msg_error_invalid_pass_id">El número de licencia debe tener mínimo 6 dígitos</string>
+    <string name="msg_error_invalid_password">La contraseña es muy corta.</string>
+    <string name="msg_error_invalid_tar_operation">El número de la tarjeta de operación debe tener 3 dígitos.</string>
+    <string name="msg_error_invalid_target_id">El número de tarjetón debe tener mínimo 3 dígitos</string>
+    <string name="msg_error_invalid_terms">Debes aceptar los términos y condiciones.</string>
+    <string name="msg_error_invalid_year">El año debe tener 4 dígitos.</string>
+    <string name="msg_error_neighborhood">El barrio es obligatorio y debe tener más de 3 caracteres.</string>
+    <string name="msg_error_no_internet">No se encontró la conexión a internet, intenta nuevamente.</string>
+    <string name="msg_error_no_service">Error al conectarse con servicio.</string>
+    <string name="msg_error_parameters">No se pudo cargar los parámetros para tu ciudad.</string>
+    <string name="msg_error_pass_character">Las contraseñas deben contener mínimo una mayúscula, un número y un carácter especial.</string>
+    <string name="msg_error_pass_equal">Las contraseñas deben ser iguales.</string>
+    <string name="msg_error_pass_min">Las contraseñas deben ser de mínimo 4 caracteres.</string>
+    <string name="msg_error_refine_log" translatable="false">Error Eliminando log.</string>
+    <string name="msg_file_error" translatable="false">Archivo con error</string>
+    <string name="msg_loading" tools:ignore="TypographyEllipsis">Cargando...por favor espere.</string>
+    <string name="msg_message_track_activate">Servicio de Tracking activado.</string>
+    <string name="msg_message_type_id">No hay tipos de identificación configurados.</string>
+    <string name="msg_monitoring_location">Recuerda que: MiMutual recopila datos de tu ubicación para permitir a los usuarios ver tu ubicación en tiempo real incluso cuando la aplicación está cerrada o no está en uso.</string>
+    <string name="msg_new_message_driver">Tienes nuevos mensajes de tu conductor.</string>
+    <string name="msg_new_message_user">Tienes nuevos mensajes del usuario.</string>
+    <string name="msg_no_permission">Lo sentimos, no hemos podido detectar tu ubicación. Por favor, asegúrate de tener la función de ubicación activada en la configuración de tu teléfono y de habernos dado los permisos de ubicación necesarios para que podamos brindarte el mejor servicio posible.</string>
+    <string name="msg_no_permission_notification">Lo sentimos, no hemos podido detectar el permiso para tus notificaciones. Por favor, asegúrate de tener activado el permiso de notificaciones activado en la configuración de tu teléfono para poder informarte en tiempo real el estado de tu servicio.</string>
+    <string name="msg_no_permissions">Para disfrutar de todas las funciones de esta aplicación, es necesario conceder los permisos requeridos. Si ya has activado los permisos necesarios, por favor inténtalo nuevamente.</string>
+    <string name="msg_permission_location">Para habilitar tu función de conductor y permitir que los usuarios vean tu ubicación en tiempo real, es necesario que actives los permisos de ubicación en segundo plano de manera constante. Deseas ir a la configuración de los permisos?</string>
+    <string name="msg_permission_location_user">MiMutual recopila datos de tu ubicación para permitir el seguimiento de los servicios incluso cuando la aplicación está cerrada o no está en uso. Esto nos permitirá rastrear tus servicios en tiempo real y ofrecerte la mejor experiencia posible.</string>
+    <string name="msg_permission_notification_user">MiMutual utiliza las notificaciones para informarte los estados de tus servicios y ofrecerte la mejor experiencia posible.</string>
+    <string name="msg_ref_tax">*El valor estimado del servicio es de referencia, el valor final lo determina el taxímetro.</string>
+    <string name="msg_select_city">Debes seleccionar la ciudad.</string>
+    <string name="msg_select_department">Debes seleccionar el departamento.</string>
+    <string name="msg_select_dest_race">Seleccione el destino de la carrera.</string>
+    <string name="msg_select_dir_ini">Selecciona la dirección inicio</string>
+    <string name="msg_select_dir_list">Selecciona la dirección de la lista</string>
+    <string name="msg_select_orig_rece">Seleccione el origen de la carrera.</string>
+    <string name="msg_select_type_doc">Debes seleccionar el tipo de documento.</string>
+    <string name="msg_send_message">Se enviará un correo electrónico para poder cambiar la información en el sistema.\n\n¿deseas enviar el correo?</string>
+    <string name="msg_service_activate">Ya puedes activarte como conductor activo.</string>
+    <string name="msg_service_active">Tienes un servicio asignado hasta que no finalice no puedes desactivar el modo conductor.</string>
+    <string name="msg_service_active_user">Tienes un servicio asignado hasta que no finalice no puedes activar el modo conductor.</string>
+    <string name="msg_service_active_close_session">Tienes un servicio activo hasta que no finalice no puedes cerrar la sesión</string>
+    <string name="msg_service_active_view_car">Tienes un servicio activo hasta que no finalice no puedes ver tus carros ni cambiarlos.</string>
+    <string name="msg_take_other_car">Deseas asignarte este carro para prestar el servicio.</string>
+
+    <string name="service_active_services" translatable="false">ServiciosActivos</string>
+    <string name="service_assign_car" translatable="false">ActivarCarro</string>
+    <string name="service_cancel_service" translatable="false">CancelarServicio</string>
+    <string name="service_cancel_service_aut" translatable="false">CancelarServicioAutomaticamente</string>
+    <string name="service_cars_driver" translatable="false">CarrosConductor</string>
+    <string name="service_change_driver_state" translatable="false">CambiarEstadoConductor</string>
+    <string name="service_cities" translatable="false">GetListCiudades</string>
+    <string name="service_close_session" translatable="false">SetCerrarSession</string>
+    <string name="service_create_service" translatable="false">SetCrearServicio</string>
+    <string name="service_departments" translatable="false">GetListDepartamentos</string>
+    <string name="service_domain" translatable="false">GetListTiposDocumento</string>
+    <string name="service_driver_services" translatable="false">ServiciosConductor</string>
+    <string name="service_drivers_available" translatable="false">ConductoresDisponibles</string>
+    <string name="service_edit_data" translatable="false">GetEditData</string>
+    <string name="service_end_service" translatable="false">FinalizarServicio</string>
+    <string name="service_get_parameters" translatable="false">ConsultarParametros</string>
+    <string name="service_get_service" translatable="false">ConsultarServicio</string>
+    <string name="service_login" translatable="false">SetValidaUsuario</string>
+    <string name="service_new_car" translatable="false">SetCrearCarro</string>
+    <string name="service_new_driver" translatable="false">SetRegistrarConductor</string>
+    <string name="service_notification_collect_service" translatable="false">NotificarRecogidaServicio</string>
+    <string name="service_pos_driver" translatable="false">PosicionConductor</string>
+    <string name="service_rating_data" translatable="false">CalificacionesConductor</string>
+    <string name="service_register" translatable="false">SetRegistrarUsuarioTaxis</string>
+    <string name="service_register_google" translatable="false">SetRegistrarUsuarioGoogleTaxis</string>
+    <string name="service_reset_pass" translatable="false">GetResetPass</string>
+    <string name="service_save_rating_data" translatable="false">GuardarCalificacion</string>
+    <string name="service_start_service" translatable="false">ComenzarServicio</string>
+    <string name="service_take_service" translatable="false">SetTomarServicio</string>
+    <string name="service_user_services" translatable="false">ServiciosUsuario</string>
+
+    <string name="share_chat_open" translatable="false">isOpen</string>
+    <string name="share_driver_active" translatable="false">KeyDriverActive</string>
+    <string name="share_id_service" translatable="false">KeyIdService</string>
+    <string name="share_id_user" translatable="false">KeyIdUser</string>
+    <string name="share_last_session_user" translatable="false">KeyLastSessionUser</string>
+    <string name="share_preference_mimutual" translatable="false">PreferencesUser</string>
+    <string name="share_token" translatable="false">Token</string>
+
+    <string name="tracking_enabled_notify">Servicio de tracking activo.</string>
+
+    <string name="txt_address">Dirección</string>
+    <string name="txt_bonding_rol">¿Como te quieres vincular?</string>
+    <string name="txt_camera_item1">Agrega la fotografía\nde tu documento de identificación</string>
+    <string name="txt_camera_item2">(sin gafas y fondo blanco)</string>
+    <string name="txt_camera_item3">Agrega la fotografía\nde logo establecimiento o foto de frente.</string>
+    <string name="txt_camera_item4">(vista frontal)</string>
+    <string name="txt_camino_hacia">En Camino hacia: %s</string>
+    <string name="txt_chat">Chat</string>
+    <string name="txt_complete_info">Completa la siguiente información</string>
+    <string name="txt_data_car">Datos del vehiculo</string>
+    <string name="txt_date_base" translatable="false">01012023</string>
+    <string name="txt_date_document">Fecha de expedición Documento</string>
+    <string name="txt_datos_del_conductor">Datos del conductor</string>
+    <string name="txt_destino_format">Destino: %s</string>
+    <string name="txt_distancia_format">Distancia: %s</string>
+    <string name="txt_document_id">Documento de identificación*</string>
+    <string name="txt_driver_available">Conductor disponible</string>
+    <string name="txt_driver_format">Conductor: %s</string>
+    <string name="txt_error_init_services">Error al iniciar el servicio</string>
+    <string name="txt_escaner_id">Escanea el codigo de tu cedula</string>
+    <string name="txt_fecha_expedicion">Fecha expedición</string>
+    <string name="txt_fecha_expiracion">Fecha expiración</string>
+    <string name="txt_find_fast_route" tools:ignore="TypographyEllipsis">Buscando la ruta más rapida...</string>
+    <string name="txt_finding_drivers">Buscando Conductores</string>
+    <string name="txt_historical_service">Historial de servicios</string>
+    <string name="txt_historical_travels">Historial de viajes</string>
+    <string name="txt_info_additional">Información adicional</string>
+    <string name="txt_info_id">Escanea el código barras de tu documento de identidad para llenar automáticamente la siguiente información</string>
+    <string name="txt_insert_fingerprint">Ingresa tu huella</string>
+    <string name="txt_message_fingerprint">Ubica tu huella en el sensor de tu celular para continuar</string>
+    <string name="txt_method_pay">Selecciona el método de pago del usuario:</string>
+    <string name="txt_my_cars">Mis Carros</string>
+    <string name="txt_neighbourhood">Barrio</string>
+    <string name="txt_new_car">Nuevo Carro</string>
+    <string name="txt_new_driver">Nuevo Conductor</string>
+    <string name="txt_new_service">Nuevo Servicio</string>
+    <string name="txt_no_account">¿Todavía no tienes cuenta?</string>
+    <string name="txt_numero_licencia_de_conducci_n">Numero licencia de conducción</string>
+    <string name="txt_numero_tarjeton">Numero tarjeton</string>
+    <string name="txt_origen_format">Origen: %s</string>
+    <string name="txt_owner">Eres el dueño</string>
+    <string name="txt_photo_background_white">La foto del perfil con fondo blanco es obligatoria.</string>
+    <string name="txt_photo_id">Foto Documento de identidad</string>
+    <string name="txt_photo_obligatory">La foto del documento es obligatoria.</string>
+    <string name="txt_photo_perfil">Foto perfil*</string>
+    <string name="txt_please_wait" tools:ignore="TypographyEllipsis">Por favor espere...</string>
+    <string name="txt_powered_by">Powered by</string>
+    <string name="txt_profile">Perfil</string>
+    <string name="txt_profile_photo">Foto perfil</string>
+    <string name="txt_rating_driver">Califica el conductor por el servicio que te presto.</string>
+    <string name="txt_rating_sat">Encuesta de Satisfacción</string>
+    <string name="txt_rol_driver">Conductor</string>
+    <string name="txt_rol_user">Usuario</string>
+    <string name="txt_scan_doc_or_id">Debes escanear tu documento o ingresar tu número de cedula</string>
+    <string name="txt_scan_doc_or_name">Debes escanear tu documento o escribir tu nombre</string>
+    <string name="txt_scan_doc_or_surname">Debes escanear tu documento o escribir tu apellido</string>
+    <string name="txt_select_city">Selecciona una ciudad</string>
+    <string name="txt_select_state">Selecciona un departamento</string>
+    <string name="txt_select_type_id">Selecciona un tipo de identificación</string>
+    <string name="txt_select_user_or_driven">Selecciona si deseas ser usuario o conductor.</string>
+    <string name="txt_subtitle_collect_service">Dirígete al punto de recogida</string>
+    <string name="txt_subtitle_collect_service_driver">Vas en camino a recoger al usuario</string>
+    <string name="txt_subtitle_request_service">Pide tu taxi seguro</string>
+    <string name="txt_subtitle_request_service_driver">Te notificaremos apenas tengamos un servicio para ti</string>
+    <string name="txt_take_this_service">¿Desea tomar este servicio?</string>
+    <string name="txt_term_conditions"><![CDATA[<font color=#FFFFFF>Acepto los </font><font color=#FFFFFF><b><a href=\'https://mimutual.co/politicas-de-privacidad-mimutual-taxis/\'>Términos y condiciones</a></b></font><font color=#FFFFFF> y la </font><font color=#FFFFFF><b><a href=\'https://mimutual.co/politicas-de-privacidad-mimutual-taxis/\'>Política \n de privacidad</a></b></font><font color=#FFFFFF> de MiMutual</font>]]></string>
+    <string name="txt_tiempo_format">Tiempo Estimado: %s</string>
+    <string name="txt_title_collect_service">CONDUCTOR EN CAMINO</string>
+    <string name="txt_title_collect_service_driver">EN SERVICIO</string>
+    <string name="txt_title_in_route_service">EN CAMINO HACIA TU DESTINO</string>
+    <string name="txt_title_in_route_service_driver">EN CAMINO HACIA DESTINO FINAL</string>
+    <string name="txt_title_request_service">SOLICITAR SERVICIO</string>
+    <string name="txt_title_request_service_driver">CONDUCTOR ACTIVO</string>
+    <string name="txt_valor_estimado_format">Valor Estimado %s</string>
+    <string name="txt_valor_pagado_format">Valor Pagado %s</string>
+    <string name="txt_write_neighbourhood">Escribe el nombre del barrio de la dirección de recogida:</string>
+    <string name="txt_recovery_pass">Recuperar Contraseña</string>
+    <string name="txt_car">Carro</string>
+    <string name="text_or">o registrate con</string>
+</resources>
